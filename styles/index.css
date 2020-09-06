@@ -322,6 +322,9 @@
 		text-indent: 10px;
 		font-size: 15px;
 	}
+	.form-control .message{
+		width: auto !important;
+	}
 	.inputs{
 		height: 30px;
 	}

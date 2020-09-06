@@ -38,7 +38,7 @@
 	}
 	.header .sub-header.fixed{
 		position: fixed;
-		width: 100%;
+		width: 100vw;
 		background: #0099ff;
 		height: 50px;
 	}
@@ -55,10 +55,10 @@
 		transition: all 0.5s ease-in-out;
 	}
 	.header .sub-header .right-header{
-			display: flex;
-			justify-content:space-between;
-			align-items: center;
-		}
+		display: flex;
+		justify-content:space-between;
+		align-items: center;
+	}
   	.header .sub-header .right-header .signup .btn {
 		cursor: pointer;
 		display: inline-block;
@@ -145,15 +145,13 @@
 	}
 	.section h1::after{
 		content: "";
-		width: 10rem;
+		width: 20vw;
 		height: .7rem;
 		background-color:#45e19f;
-/*		position: static;
-*/		border-radius: 2rem;
+		border-radius: 2rem;
 		margin-bottom:-.3rem;
 		margin-left: 50%;
 		transition: all 1s ease-in-out;
-		/*transform: translateX(-50%);*/
 		display: block;
 	}
 	.section h1:hover::after{
@@ -165,8 +163,6 @@
 		align-items: center;
 		justify-content: center;
 		box-sizing: border-box;
-		/*background-color: red;
-		opacity: 0.3;*/
 	}
 	.home-section .section-left{
 		width: 500vw;
@@ -189,8 +185,7 @@
 	}
 	.home-section .section-right{
 		width: 300vw;
-/*		padding: 10px;
-*/	}
+	}
 	.home-section .section-right img{
 		cursor: pointer;
 		width: 30vw;
@@ -283,7 +278,7 @@
 	.contactus-section h2{
 		color: cyan;
 		text-align: center;
-		padding: 10px;
+		padding: 2vw;
 	}
 	.form{
 		display: flex;
@@ -300,8 +295,8 @@
 		font-size: 20px;
 		text-decoration: none;
 		color: cyan;
-		padding-left: 5px;
-	}
+		padding-left: 1vw;
+		}
 	.fa-color{
 		color: white;
 	}
@@ -311,7 +306,7 @@
 	}
 	.form textarea {
 		height: 150px ;
-		width: 300px;
+		width:30vw;
 
 	}
 	.form-control{
@@ -333,23 +328,20 @@
 		cursor: pointer;
 	}
 	.contactus-left{
-		margin: 10px;
+		margin: 0px;
 	}
 	.contactus-right{
-		/*flex-direction: column;*/
 	}
 	.nav-to-top i{
 		width: 100%;
 		float: right;
-		font-size: 30px;
-		/*margin-top: 20px;*/
+		font-size: 25px;
 		display: block;
 		color: white;
-		margin-bottom: 3px;
 	}
 	.nav-to-top{
 		color: white;
-		margin: 5px;
+		margin: 1vh;
 	}
 	footer{
 		text-align: center;
@@ -376,14 +368,14 @@
 
 	/* custom stylesheet for devices of  less than 1000 px width*/
 
-	@media screen and (max-width: 775px){
+	@media screen and (max-width: 800px){
 		.header .sub-header .right-header{
 			display: none;
 		}
 		.header .sub-header .top-header{
 			display: flex;
 			justify-content: space-between;
-			width: 100%;
+			width: 100vw;
 			align-items: center;
 		}
 		.sub-header .top-header .collapsable-menu{
@@ -397,7 +389,7 @@
 			background-color: #0099ff;
 			position: fixed;
 			height: 50px;
-			padding: 0 100px;
+			padding: 0 40px;
 			top: 0;
 			box-sizing: border-box;
 		}
@@ -406,7 +398,7 @@
 			background-color: #0099ff;
 			position: fixed;
 			bottom: 0;
-			width: 100%;
+			width: 100vw;
 /*			height: 100%;
 */			height: calc(100% - 50px);
 		}
@@ -422,24 +414,24 @@
 			display: none;
 		}
 		.section-left{
-			width: 100%;
+			width: 100vw;
 		}
 		.section-left p{
-			text-align: center;
-			padding: 20px;
+			text-align: left;
+			padding: 2vw 0;
 			overflow: hidden;
 		}
 		.section-left .brand{
-			padding-top: 50px;
+			padding-top: 7vh;
 			text-align: center;
 		}
 		.section h1{
 			font-size: 1.5rem;
-			padding-top: 50px;
+			padding-top: 3vh;
 		}
 		.card-wrapper{
 			flex-direction: column;
-			padding:50px;
+			padding:3vw;
 			align-items: center;
 			justify-content: center;
 			box-sizing: border-box;
@@ -450,6 +442,30 @@
 		.form{
 			flex-direction: column;
 		}
+		.form-control{
+		margin-bottom: 1vh;
+	    }
+	    .form textarea{
+	    	width: 50vw;
+	    }
+	    .form-control .message{
+	    	width: auto;
+	    }
+	    .contact-links{
+	    	order: 2;
+	    }
+	    .contactus-left{
+	    	order: 0
+	    }
+	    .contactus-right{
+	    	order: 1;
+	    }
+	    .top{
+	    	order: 3
+	    }
+	    .nav-to-top i{
+	    	padding: 5vw;
+	    }
 	}
 
 			/*stylesheet for signup page*/

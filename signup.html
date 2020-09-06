@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<link rel="stylesheet" type="text/css" href="styles/signupstyle.css">
+	<link rel="stylesheet" href="styles/fontawesome/css/all.css">
+</head>
+
+<header class="header">
+	<svg class="wave-header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+			<stop offset="0%" />
+			<stop offset="100%" />
+		</linearGradient>
+  	<path fill="url(#gradient)" fill-opacity="0.8" d="M0,160L48,154.7C96,149,192,139,288,144C384,149,480,171,576,181.3C672,192,768,192,864,170.7C960,149,1056,107,1152,106.7C1248,107,1344,149,1392,170.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+  	</path>
+	</svg>
+<div class="sub-header ">
+	<div class="top-header">
+	<div class="logo">	   
+	 <a href="index.html#home">Nhatty</a>
+	</div>
+	<div class="collapsable-menu">
+		<div class="dash"></div>
+		<div class="dash"></div>
+		<div class="dash"></div>
+	</div>
+    </div>
+    <div class="right-header">
+	<div class="navigation">
+<nav>
+	<li ><a class="link" href="index.html#home ">Home</a></li>
+	<li ><a class="link" href="index.html#service">Services</a></li>
+	<li ><a class="link" href="index.html#software">Softwares</a></li>
+	<li ><a class="link" href="index.html#tutorial">Tutorials</a></li>
+	<li ><a class="link" href="index.html#project">Projects</a></li>
+	<!-- <li ><a class="link" href="#about">About Us</a></li> -->
+	<li ><a class="link" href="index.html#contact">Contact Us</a></li>
+</nav>
+</div>
+<div class="signup">
+	   <button class="btn" onclick="signup()"><a href="signup.html">SIGNUP</a></button>
+</div>
+</div>
+</div>
+</header>
+<body>
+	<section class="signup-section">
+		<div class="form">
+			<form method="POST" action="">
+				<label class="label "><img src="./images/gh.png"></label>
+				<input type="text" name="FullName" placeholder="FullName" class="name-input formcontrol" required>
+				<input type="Email" name="Email" placeholder="Email" class="email-input formcontrol" required>
+				<input type="password" name="Password" placeholder="Password" class="password-input formcontrol" required>
+				<input type="Password" name="confpassword" placeholder="Confirm Password" class="confpassword-input formcontrol" required>
+				<input type="submit" name="Signup" value="SIGNUP" class="signup-button formcontrol">
+			</form>
+		</div>
+	</section>
+	<script src="./script.js"></script>
+</body>
+</html>

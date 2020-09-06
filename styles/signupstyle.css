@@ -1,0 +1,48 @@
+		.signup-section{
+			width: 100vw;
+			height: calc(100vh - 45px);	
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: linear-gradient(rgba(3,3,3,0),rgba(3,3,3,0.4));
+/*			background: linear-gradient(rgba(0, 18, 54, 0.678),rgba(44, 0, 1,0.2)),url('./images/gh.png');
+*/			
+		}
+		.form{
+			padding: 0 80px 80px 80px;
+			margin-top: 25px;
+			align-items: center;
+			border-radius: 10px;
+			background: linear-gradient(rgba(0, 18, 54, 0),rgba(44, 0, 1,0.3));
+/*			background: rgba(22,23,56,1);
+*/		}
+		.formcontrol{
+			display: block;
+			min-width: 30vw;
+			height: 33px;
+			margin: 6px;
+			border-radius: 6px;
+			border:none;
+/*			border:1px solid blue;
+*/			text-indent:15px;
+			font-size: 15px;
+		}
+		label{
+		
+		}
+		label img{
+			margin-top: 10px;
+			width: 30vw;
+			height: 150px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.signup-button{
+			text-align: center;
+			background-color: green;
+			color: white;
+			cursor: pointer;
+			border:none;
+			font-size: 20px;
+		}

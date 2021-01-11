@@ -52,7 +52,7 @@
 		font-weight: 900px;
 	}
 	.header .sub-header .top-header{
-		transition: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 	.header .sub-header .right-header{
 		display: flex;
@@ -81,7 +81,7 @@
 		font-size: 17px;
 	}
 	.header .sub-header .right-header .navigation nav li {
-		padding: 0 10px;
+		padding: 0 5vw;
 		display: inline-block;
 		font-weight: bold;
 /*		margin: 12px;
@@ -389,7 +389,7 @@
 			background-color: #0099ff;
 			position: fixed;
 			height: 50px;
-			padding: 50px;
+			padding: 0 60px;
 			top: 0;
 			box-sizing: border-box;
 		}

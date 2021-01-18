@@ -41,7 +41,7 @@
 </nav>
 </div>
 <div class="signup">
-	   <button class="btn" onclick="signup()"><a href="signup.html">SIGNUP</a></button>
+	   <button class="btn" onclick="signup()" title="Signup here to connected with us."><a href="signup.html">SIGNUP</a></button>
 </div>
 </div>
 </div>
@@ -50,12 +50,15 @@
 	<section class="signup-section">
 		<div class="form">
 			<form method="POST" action="">
-				<label class="label "><img src="./images/gh.png"></label>
+				<fieldset>
+					<legend>Signup</legend>
+				<!-- <label class="label "><img src="./images/gh.png"></label> -->
 				<input type="text" name="FullName" placeholder="FullName" class="name-input formcontrol" required>
 				<input type="Email" name="Email" placeholder="Email" class="email-input formcontrol" required>
 				<input type="password" name="Password" placeholder="Password" class="password-input formcontrol" required>
 				<input type="Password" name="confpassword" placeholder="Confirm Password" class="confpassword-input formcontrol" required>
 				<input type="submit" name="Signup" value="SIGNUP" class="signup-button formcontrol">
+			</fieldset>
 			</form>
 		</div>
 	</section>

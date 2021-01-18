@@ -198,8 +198,26 @@ body {
 }
 .home-section .section-left p {
   padding-top: 4vh;
+  font-size: 1.2rem;
+  word-spacing: 0rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.home-section .section-left p::before {
+  content: "";
+  display: block;
+  background: #ff652f;
+  height: 0.2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.home-section .section-left p::after {
+  content: "";
+  display: block;
+  background: #ff652f;
+  height: 0.2rem;
+  width: 100%;
+  margin-top: 1rem;
+}
 .home-section .section-left .brand span:hover {
   transform: scaleY(1.25);
 }
@@ -296,6 +314,7 @@ body {
 /*Contac us custom style*/
 
 .contactus-section h2 {
+  text-decoration: underline;
   color: cyan;
   text-align: center;
   padding: 2vw;
@@ -343,6 +362,8 @@ body {
   height: 30px;
 }
 .form .button {
+  color: white;
+  font-size: 1.2rem;
   background: green;
   cursor: pointer;
 }
@@ -363,6 +384,8 @@ body {
   margin: 1vh;
 }
 footer {
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
   text-align: center;
   color: white;
 }
